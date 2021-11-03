@@ -4,12 +4,12 @@ int IsPrime(int x);
 int Average(int a[],int x);
 int main(){
 	int x=100;
-	int a[221]={0};
+	int a[221]={0}; //numbers of superprime
 	int n=0,i=0;
 	
 	for(;x<=10000;x++){
 		
-		int num[5]={0};
+		int num[5]={0};//every digits of x
 		
 		if(IsPrime(x)){
 			
@@ -24,7 +24,7 @@ int main(){
 			}
 		}
 	}
-	printf("average£º%d",(Average(a,n)/n));	
+	printf("averageÂ£Âº%d",(Average(a,n)/n));	
 	return 0;
 	
 }
